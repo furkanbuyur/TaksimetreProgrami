@@ -7,7 +7,7 @@ public class Main {
         Scanner inp = new Scanner(System.in);
         System.out.print("Gidilecek Mesafe (km) :...");
         km = inp.nextDouble();
-        tutar = (km * 2.2);
+        tutar = km * 2.2;
         tutar += startPrice;
         tutar = tutar <= azami ? (float) azami : tutar;
         System.out.println("Taksimetre Tutarı: " + tutar + " TL" );
